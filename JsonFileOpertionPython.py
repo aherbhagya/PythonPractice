@@ -16,6 +16,6 @@ for val in list1:  #val dictionary item of list
 		jsondata1.append(val) 
 dict["sports"] = jsondata1
 file_json= open("newdata6.json", "w")
-json.dump(dict,file_json, indent=2)
+json.dump(sort(dict),file_json, indent=2)
 file_txt.close()
 file_json.close()
