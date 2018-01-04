@@ -17,4 +17,12 @@ result4=[x.lower() for x in ['A','F','H','T','MAHESH','KEDAR','sads']]
 print result4
 
 string='mahesh langote 24 male 787474 nanded 10 aug'
-result5=[]
+result5=[x for x in string if x.isdigit()]
+print result5
+
+mix_list=['mahesh','langote','male','python','angularjs','js',24]
+result6=[(key,value) for key,value in enumerate(mix_list)]
+
+print result6 #enumerate
+lst=range(1,11)
+print lst
